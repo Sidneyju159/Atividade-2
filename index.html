@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+<body>
+    <div id="validation-alert" class="alert alert-danger fixed-top mx-auto mt-2" role="alert" style="display:none; max-width: 400px; z-index: 1050;">
+        <strong>Erro!</strong> Por favor, preencha todos os campos obrigatórios.
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-rocket me-2"></i> LançamentoTech
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Alterna navegação"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#apresentacao">Apresentação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeria">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="d-flex text-center">  
+        <div class="container">
+            <h1 class="animate__animated animate__fadeInDown text-white-50 text-center ">Revolucione sua Produtividade</h1>
+            <p class="lead mb-5 mt-3">A plataforma inovadora que simplifica processos complexos, garantindo resultados rápidos e eficientes.</p>
+            
+            <a href="#apresentacao" class="btn btn-outline-light btn-lg scroll-btn  text-black-50 col-sm-10">
+            Saiba Mais
+            </a>
+        </div>
+        </div>
+
+    </section>
+
+    <section id="apresentacao" class="section-padding">
+        <div class="container">
+            <div class="row mb-5 text-center">
+                <div class="col-md-12">
+                    <h2 class="display-5 fw-bold text-white-50">Nossos Principais Recursos</h2>
+                    <p class="lead text-secondary text-white">Projetado para ser robusto, escalável e fácil de usar.</p>
+                    
+                    <a href="#galeria" class="btn btn-primary btn-lg scroll-btn shadow-lg mt-4">
+                        Conheça Nossa Galeria
+                    </a>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg- btn-close-white shadow-sm h-100 ">
+                        <i class="fas fa-chart-line fa-2x text-primary mb-3"></i>
+                        <h4 class="fw-bold">Análise em Tempo Real</h4>
+                        <p class="text-secondary text-dark">Monitore suas métricas vitais com dashboards atualizados instantaneamente, permitindo decisões rápidas.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg- btn-close-white shadow-sm h-100 ">
+                        <i class="fas fa-cloud fa-2x text-primary mb-3"></i>
+                        <h4 class="fw-bold">Infraestrutura em Nuvem</h4>
+                        <p class="text-secondary text-dark">Segurança de nível empresarial e alta disponibilidade, garantindo que seus dados estejam sempre protegidos.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg- btn-close-white shadow-sm h-100 ">
+                        <i class="fas fa-headset fa-2x text-primary mb-3"></i>
+                        <h4 class="fw-bold">Suporte 24 horas</h4>
+                        <p class="text-secondary text-dark">Nossa equipe de especialistas está sempre disponível para resolver qualquer dúvida ou problema rapidamente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="galeria" class="section-padding bg-white">
+        <div class="container">
+            <div class="row mb-5 text-center">
+                <div class="col-md-12">
+                    <h2 class="display-5 fw-bold text-white-50">O Que Dizem Nossos Clientes?</h2>
+                    <p class="lead text-secondary text-white">Histórias de sucesso que provam o valor da nossa solução.</p>
+                </div>
+            </div>
+
+            <div class="row g-4 justify-content-center text-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card shadow-sm" data-target="#detail-1">
+                        <p class="fst-italic">"Simplesmente transformador! Conseguimos reduzir o tempo de processamento em 40%."</p>
+                        <p class="mb-0 fw-bold">- João Silva, CEO da Startup X</p>
+                        <div id="detail-1" class="testimonial-details text-secondary" style="display:none;">
+                            <small>O suporte foi excepcional e a implementação superou nossas expectativas em termos de facilidade de uso.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card shadow-sm" data-target="#detail-2">
+                        <p class="fst-italic">"A melhor ferramenta de automação que já usamos. Recomendo para todas as empresas."</p>
+                        <p class="mb-0 fw-bold">- Maria Santos, Gerente de Projetos</p>
+                        <div id="detail-2" class="testimonial-details text-secondary" style="display:none;">
+                            <small>A escalabilidade da plataforma permitiu que crescêssemos sem preocupações com gargalos técnicos.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card shadow-sm" data-target="#detail-3">
+                        <p class="fst-italic">"O ROI foi alcançado em menos de 3 meses. Incrível!"</p>
+                        <p class="mb-0 fw-bold">- Pedro Souza, Diretor Financeiro</p>
+                        <div id="detail-3" class="testimonial-details text-secondary" style="display:none;">
+                            <small>A funcionalidade de relatórios personalizados é um diferencial que nos economizou muitas horas de trabalho manual.</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-4">
+                    <a href="#contato" class="btn btn-primary btn-lg scroll-btn shadow-lg">
+                        Fale Conosco Agora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section-padding bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center mb-5">
+                <h2 class="display-5 fw-bold text-white-50">Fale Conosco e Comece Agora</h2>
+                <p class="lead text-secondary text-white">Preencha o formulário para receber uma demonstração gratuita ou tirar suas dúvidas.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="p-4 btn-group-sm align-items-md-start rounded-4 shadow"> 
+                    <form id="contact-form" novalidate>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome Completo <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control rounded-3" id="nome" name="nome" required>
+                            <div class="invalid-feedback">O nome é obrigatório.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control rounded-3" id="email" name="email" required>
+                            <div class="invalid-feedback">O email é obrigatório e deve ser válido.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control rounded-3" id="mensagem" name="mensagem" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 scroll-btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center mt-4">
+            <div class="col-auto">
+                <a href="#home" class="btn btn-outline-primary btn-lg scroll-btn shadow-lg">
+                    Voltar ao Início
+                </a>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+    <footer class="py-4 bg-dark">
+        <div class="container text-center">
+            <div class="mb-3">
+                <h5 class="fw-bold text-white">Conecte-se Conosco</h5>
+            </div>
+            <p class="text-muted small mb-0">
+                &copy; 2025 LançamentoTech. Todos os direitos reservados. | Desenvolvido por [Sidney Jose de Sousa Ramos Junior]
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    </body>
+</html>
